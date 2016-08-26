@@ -1,0 +1,347 @@
+<!-- Container for the three panels of the planner -->
+<div class="row">
+    <!-- First Content Section -->
+    <div class="flex-col section col-md-4">
+        <!-- RP Info -->
+        <div class="row">
+            <label class="col-xs-6" for="name">Name:</label>
+            <input class="col-xs-6" type="text" id="name" ng-model="build.name" placeholder="Build Name" value="Build Name" ng-required="true" />
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="classSelect">Class:</label>
+            <select class="col-xs-6" id="classSelect" ng-model="class" ng-change="controller.setClass(); controller.updateAll(build.vigor,build.attunement,build.endurance,build.vitality)">
+                <option ng-repeat="characterClass in controller.dataService.statData">{{characterClass.name}}</option>
+                <!--<option value="">Select a Class</option>-->
+            </select>
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="genderSelect">Gender:</label>
+            <select class="col-xs-6" id="genderSelect">
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="covenantSelect">Covenant:</label>
+            <select class="col-xs-6" id="covenantSelect">
+                <option>Warriors of Sunlight</option>
+                <option>Rosaria's Fingers</option>
+                <option>Aldrich Faithful</option>
+                <option>Mound Makers</option>
+                <option>Watchdogs of Farron</option>
+                <option>Blades of the Darkmoon</option>
+                <option>Way of Blue</option>
+            </select>
+        </div>
+
+        <div class="flex-row f-jc-c">
+            <span>-----------------------------------------------</span>
+        </div>
+
+        <!-- Stats Panel | use Angular for base display -->
+        <div class="row">
+            <label class="col-xs-4" for="level">Level</label>
+            <span class="">
+                <input class="col-xs-4" type="text" id="baseLevel" value="{{controller.stats.bLevel}}" readonly />
+                <input class="col-xs-4" type="text" id="level" value="{{level}}" readonly />
+            </span>
+        </div>
+        <div class="row">
+            <label class="col-xs-4" for="vigor">Vigor</label>
+            <span class="">
+                <input class="col-xs-4" type="text" id="baseVigor" value="{{controller.stats.bVigor}}" readonly />
+                <input class="col-xs-4" type="number" id="vigor" ng-model="build.vigor" ng-model-options="{debounce:200}" ng-change="controller.setHP(build.vigor); controller.updateLevel()" min="{{controller.stats.bVigor}}" max="99" />
+            </span>
+        </div>
+        <div class="row">
+            <label class="col-xs-4" for="attn">Attunement</label>
+            <span class="">
+                <input class="col-xs-4" type="text" id="baseAttn" value="{{controller.stats.bAttn}}" readonly />
+                <input class="col-xs-4" type="number" id="attn" ng-model="build.attunement" ng-model-options="{debounce:200}" ng-change="controller.setFP(build.attunement); controller.updateLevel()" min="{{controller.stats.bAttn}}" max="99" />
+            </span>
+        </div>
+        <div class="row">
+            <label class="col-xs-4" for="endurance">Endurance</label>
+            <span class="">
+                <input class="col-xs-4" type="text" id="baseEndurance" value="{{controller.stats.bEndurance}}" readonly />
+                <input class="col-xs-4" type="text" id="endurance" ng-model="build.endurance" ng-model-options="{debounce:200}" ng-change="controller.setStam(build.endurance); controller.updateLevel()" min="{{controller.stats.bEndurance}}" max="99" />
+            </span>
+        </div>
+        <div class="row">
+            <label class="col-xs-4" for="vitality">Vitality</label>
+            <span class="">
+                <input class="col-xs-4" type="text" id="baseVitality" value="{{controller.stats.bVitality}}" readonly />
+                <input class="col-xs-4" type="text" id="vitality" ng-model="build.vitality" ng-model-options="{debounce:200}" ng-change="controller.setLoad(build.vitality); controller.updateLevel()" min="{{controller.stats.bVitality}}" max="99" />
+            </span>
+        </div>
+        <div class="row">
+            <label class="col-xs-4" for="strength">Strength</label>
+            <span class="">
+                <input class="col-xs-4" type="text" id="baseStrength" value="{{controller.stats.bStrength}}" readonly />
+                <input class="col-xs-4" type="text" id="strength" ng-model="build.strength" ng-model-options="{debounce:200}" ng-change="controller.updateLevel()" min="{{controller.stats.bStrength}}" max="99" />
+            </span>
+        </div>
+        <div class="row">
+            <label class="col-xs-4" for="dexterity">Dexterity</label>
+            <span class="">
+                <input class="col-xs-4" type="text" id="baseDexterity" value="{{controller.stats.bDexterity}}" readonly />
+                <input class="col-xs-4" type="text" id="dexterity" ng-model="build.dexterity" ng-model-options="{debounce:200}" ng-change="controller.updateLevel()" min="{{controller.stats.bDexterity}}" max="99" />
+            </span>
+        </div>
+        <div class="row">
+            <label class="col-xs-4" for="intelligence">Intelligence</label>
+            <span class="">
+                <input class="col-xs-4" type="text" id="baseIntelligence" value="{{controller.stats.bIntelligence}}" readonly />
+                <input class="col-xs-4" type="text" id="intelligence" ng-model="build.intelligence" ng-model-options="{debounce:200}" ng-change="controller.updateLevel()"min="{{controller.stats.bIntelligence}}" max="99" />
+            </span>
+        </div>
+        <div class="row">
+            <label class="col-xs-4" for="faith">Faith</label>
+            <span class="">
+                <input class="col-xs-4" type="text" id="baseFaith" value="{{controller.stats.bFaith}}" readonly />
+                <input class="col-xs-4" type="text" id="faith" ng-model="build.faith" ng-model-options="{debounce:200}" ng-change="controller.updateLevel()" min="{{controller.stats.bFaith}}" max="99" />
+            </span>
+        </div>
+        <div class="row">
+            <label class="col-xs-4" for="luck">Luck</label>
+            <span class="">
+                <input class="col-xs-4" type="text" id="baseLuck" value="{{controller.stats.bLuck}}" readonly />
+                <input class="col-xs-4" type="text" id="luck" ng-model="build.luck" ng-model-options="{debounce:200}" ng-change="controller.updateLevel()" min="{{controller.stats.bLuck}}" max="99" />
+            </span>
+        </div>
+    </div>
+
+    <!-- Second Content Section -->
+    <div class="flex-col section col-md-4">
+        <!-- Armor -->
+        <div class="row">
+            <label class="col-xs-6" for="head">Head:</label>
+            <select class="col-xs-6" id="head" ng-model="build.helm" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs)" ng-options="armor.name as armor.name for armor in controller.helms">
+                <option value="">Nothing</option>
+            </select>
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="body">Body:</label>
+            <select class="col-xs-6" id="body" ng-model="build.chest" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs)" ng-options="armor.name as armor.name for armor in controller.chests">
+                <option value="">Nothing</option>
+            </select>
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="hands">Hands:</label>
+            <select class="col-xs-6" id="hands" ng-model="build.arms" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs)" ng-options="armor.name as armor.name for armor in controller.arms">
+                <option value="">Nothing</option>
+            </select>
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="legs">Legs:</label>
+            <select class="col-xs-6" id="legs" ng-model="build.legs" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs)" ng-options="armor.name as armor.name for armor in controller.legs">
+                <option value="">Nothing</option>
+            </select>
+        </div>
+
+        <div class="flex-row f-jc-c">
+            <span>-----------------------------------------------</span>
+        </div>
+
+        <!-- Rings -->
+        <div class="row">
+            <label class="col-xs-6" for="ring1">Ring1:</label>
+            <select class="col-xs-6" id="ring1" ng-model="build.ring1" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs)" ng-options="ring.name as ring.name for ring in controller.rings">
+                <option value="">None</option>
+            </select>
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="ring2">Ring2:</label>
+            <select class="col-xs-6" id="ring2" ng-model="build.ring2" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs)" ng-options="ring.name as ring.name for ring in controller.rings">
+                <option value="">None</option>
+            </select>
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="ring3">Ring3:</label>
+            <select class="col-xs-6" id="ring3" ng-model="build.ring3" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs)" ng-options="ring.name as ring.name for ring in controller.rings">
+                <option value="">None</option>
+            </select>
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="ring4">Ring4:</label>
+            <select class="col-xs-6" id="ring4" ng-model="build.ring4" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs)" ng-options="ring.name as ring.name for ring in controller.rings">
+                <option value="">None</option>
+            </select>
+        </div>
+
+        <div class="flex-row f-jc-c">
+            <span>-----------------------------------------------</span>
+        </div>
+
+        <!-- Weapons | if decide to use damage calcs or base values use Angular to make things easier-->
+        <div class="row">
+            <!-- Weapons Panel 1 -->
+            <div class="col-xs-6 wPanel">
+                <div class="row">
+                    <label class="col-xs-12" for="weaponL1">L1:{{l1Damage}}</label>
+                </div>
+                <div class="row">
+                    <select class="col-xs-12" id="weaponL1" ng-model="build.weaponsL1" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs); controller.calcWepDamage()" ng-options="weapon.name as weapon.name for weapon in controller.weapons">
+                        <option value="">Bare Fist</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="col-xs-12" for="weaponL2">L2:{{l2Damage}}</label>
+                </div>
+                <div class="row">
+                    <select class="col-xs-12" id="weaponL2" ng-model="build.weaponsL2" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs); controller.calcWepDamage()" ng-options="weapon.name as weapon.name for weapon in controller.weapons">
+                        <option value="">Bare Fist</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="col-xs-12" for="weaponL3">L3:{{l3Damage}}</label>
+                </div>
+                <div class="row">
+                    <select class="col-xs-12" id="weaponL3" ng-model="build.weaponsL3" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs); controller.calcWepDamage()" ng-options="weapon.name as weapon.name for weapon in controller.weapons">
+                        <option value="">Bare Fist</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Weapons Panel 2 -->
+            <div class="col-xs-6 wPanel">
+                <div class="row">
+                    <label class="col-xs-12" for="weaponR1">R1:{{r1Damage}}</label>
+                </div>
+                <div class="row">
+                    <select class="col-xs-12" id="weaponR1" ng-model="build.weaponsR1" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs); controller.calcWepDamage()" ng-options="weapon.name as weapon.name for weapon in controller.weapons">
+                        <option value="">Bare Fist</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="col-xs-12" for="weaponR2">R2:{{r2Damage}}</label>
+                </div>
+                <div class="row">
+                    <select class="col-xs-12" id="weaponR2" ng-model="build.weaponsR2" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs); controller.calcWepDamage()" ng-options="weapon.name as weapon.name for weapon in controller.weapons">
+                        <option value="">Bare Fist</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label class="col-xs-12" for="weaponR3">R3:{{r3Damage}}</label>
+                </div>
+                <div class="row">
+                    <select class="col-xs-12" id="weaponR3" ng-model="build.weaponsR3" ng-change="controller.calcAll(build.helm, build.chest, build.arms, build.legs); controller.calcWepDamage()" ng-options="weapon.name as weapon.name for weapon in controller.weapons">
+                        <option value="">Bare Fist</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Third Content Section -->
+    <div class="flex-col section col-md-4">
+        <!-- Vitals | can use Angular to make this a joke-->
+        <div class="row">
+            <label class="col-xs-6" for="health">HP:</label>
+            <input class="col-xs-6" type="text" id="health" ng-model="HP" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="force">FP:</label>
+            <input class="col-xs-6" type="text" id="force" ng-model="FP" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="stamina">Stamina:</label>
+            <input class="col-xs-6" type="text" id="stamina" ng-model="stamina" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="equip">Equip Load:</label>
+            <input class="col-xs-6" type="text" id="equip" ng-model="equipLoad" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="poise">Poise:</label>
+            <input class="col-xs-6" type="text" id="poise" ng-model="lolPoise" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-6" for="discovery">Item Discovery:</label>
+            <input class="col-xs-6" type="text" id="discovery" ng-model="itemDiscovery" readonly />
+        </div>
+
+        <!-- Defenses | use Angular to make this so much easier-->
+        <div class="row">
+            <span class="col-xs-4"></span>
+            <label class="col-xs-4">Defense</label>
+            <label class="col-xs-4">Absorbtion</label>
+        </div>
+        <div class="row">
+            <label class="col-xs-4">Physical:</label>
+            <input class="col-xs-4" type="text" id="physDef" value="0" ng-model="controller.defenses[0].toFixed(2)" readonly />
+            <input class="col-xs-4" type="text" id="physAb" value="0" ng-model="controller.defenses[1].toFixed(2)" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-4">VS Slash:</label>
+            <input class="col-xs-4" type="text" id="slashDef" value="0" ng-model="controller.defenses[2].toFixed(2)" readonly />
+            <input class="col-xs-4" type="text" id="slashAb" value="0" ng-model="controller.defenses[3].toFixed(2)" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-4">VS Strike:</label>
+            <input class="col-xs-4" type="text" id="strikeDef" value="0" ng-model="controller.defenses[4].toFixed(2)" readonly />
+            <input class="col-xs-4" type="text" id="strikeAb" value="0" ng-model="controller.defenses[5].toFixed(2)" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-4">VS Thrust:</label>
+            <input class="col-xs-4" type="text" id="thrustDef" value="0" ng-model="controller.defenses[6].toFixed(2)" readonly />
+            <input class="col-xs-4" type="text" id="thrustAb" value="0" ng-model="controller.defenses[7].toFixed(2)" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-4">Magic:</label>
+            <input class="col-xs-4" type="text" id="magDef" value="0" ng-model="controller.defenses[8].toFixed(2)" readonly />
+            <input class="col-xs-4" type="text" id="magAb" value="0" ng-model="controller.defenses[9].toFixed(2)" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-4">Fire:</label>
+            <input class="col-xs-4" type="text" id="fireDef" value="0" ng-model="controller.defenses[10].toFixed(2)" readonly />
+            <input class="col-xs-4" type="text" id="fireAb" value="0" ng-model="controller.defenses[11].toFixed(2)" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-4">Lightning:</label>
+            <input class="col-xs-4" type="text" id="ltngDef" value="0" ng-model="controller.defenses[12].toFixed(2)" readonly />
+            <input class="col-xs-4" type="text" id="ltngAb" value="0" ng-model="controller.defenses[13].toFixed(2)" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-4">Dark:</label>
+            <input class="col-xs-4" type="text" id="darkDef" value="0" ng-model="controller.defenses[14].toFixed(2)" readonly />
+            <input class="col-xs-4" type="text" id="darkAb" value="0" ng-model="controller.defenses[15].toFixed(2)" readonly />
+        </div>
+
+        <!-- Resistances | Angular to make this so much easier -->
+        <div class="row">
+            <span class="col-xs-4"></span>
+            <label class="col-xs-4">Resistance</label>
+            <label class="col-xs-4">From Armor</label>
+        </div>
+        <div class="row">
+            <label class="col-xs-4">Bleed:</label>
+            <input class="col-xs-4" type="text" id="bleedRes" value="0" ng-model="controller.defenses[16].toFixed(2)" readonly />
+            <input class="col-xs-4" type="text" id="bleedFA" value="0" ng-model="controller.defenses[17].toFixed(2)" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-4">Poison:</label>
+            <input class="col-xs-4" type="text" id="poisonRes" value="0" ng-model="controller.defenses[18].toFixed(2)" readonly />
+            <input class="col-xs-4" type="text" id="poisonFA" value="0" ng-model="controller.defenses[19].toFixed(2)" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-4">Frost:</label>
+            <input class="col-xs-4" type="text" id="frostRes" value="0" ng-model="controller.defenses[20].toFixed(2)" readonly />
+            <input class="col-xs-4" type="text" id="frostFA" value="0" ng-model="controller.defenses[21].toFixed(2)" readonly />
+        </div>
+        <div class="row">
+            <label class="col-xs-4">Curse:</label>
+            <input class="col-xs-4" type="text" id="curseRes" value="0" ng-model="controller.defenses[22].toFixed(2)" readonly />
+            <input class="col-xs-4" type="text" id="curseFA" value="0" ng-model="controller.defenses[23].toFixed(2)" readonly />
+        </div>
+    </div>
+
+</div>
+
+<!-- Save button for builds -->
+<div class="row">
+    <form ng-submit="controller.postBuild(build)">
+        <input type="submit" class="btn btn-primary" ng-show="account.isLoggedIn()" value="Save Build" />
+        <span ng-show="!account.isLoggedIn()">Log in to save builds</span>
+    </form>
+</div>

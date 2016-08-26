@@ -1,0 +1,108 @@
+Name,Effect,Weight
+Ring of Life,Increase HP,0.3
+Ring of Life +1,Increase HP,0.3
+Ring of Life +2,Increase HP,0.3
+Ring of Life +3,Increase HP,0.3
+Sun Princess Ring,Healing per second,0.6
+Estus Ring,Increase healing amount from Estus,0.8
+Ashen Estus Ring,Increase recovery amount from Ashen Estus,0.8
+Choranthy Ring,Increase stamina regeneration,0.7
+Chloranthy Ring +1,Increase stamina regeneration,0.7
+Chloranthy Ring +2,Increase stamina regeneration,0.7
+Havel's Ring,Increase max equipload,1.5
+Havel's Ring +1,Increase max equipload,1.5
+Havel's Ring +2,Increase max equipload,1.5
+Ring of Favor,"Increase HP, stamina, and equipload",1.5
+Ring of Favor +1,"Increase HP, stamina, and equipload",1.5
+Ring of Favor +2,"Increase HP, stamina, and equipload",1.5
+Prisoners Chain,"Add +5 to Vigor, Vitality, and Endurance. Decreases absorbtion by 10%",0.8
+Ring of Steel Protection,Increase physical defense and absorbtion,0.8
+Ring of Steel Protection +1,Increase physical defense and absorbtion,0.8
+Ring of Steel Protection +2,Increase physical defense and absorbtion,0.8
+Magic Stoneplate Ring,Increase magical defense and absorbtion,0.6
+Magic Stoneplate Ring +1,Increase magical defense and absorbtion,0.6
+Magic Stoneplate Ring +2,Increase magical defense and absorbtion,0.6
+Flame Stoneplate Ring,Increase fire defense and absorbtion,0.6
+Flame Stoneplate Ring +1,Increase fire defense and absorbtion,0.6
+Flame Stoneplate Ring +2,Increase fire defense and absorbtion,0.6
+Thunder Stoneplate Ring,Increase lightning defense and absorbtion,0.6
+Thunder Stoneplate Ring +1,Increase lightning defense and absorbtion,0.6
+Thunder Stoneplate Ring +2,Increase lightning defense and absorbtion,0.6
+Dark Stoneplate Ring,Increase dark defense and absorbtion,0.6
+Dark Stoneplate Ring +1,Increase dark defense and absorbtion,0.6
+Dark Stoneplate Ring +2,Increase dark defense and absorbtion,0.6
+Speckled Stoneplate Ring,Increase elemental defense and absorbtion,0.9
+Speckled Stoneplate Ring +1,Increase elemental defense and absorbtion,0.9
+Bloodbite Ring,Increase bleed resistance,0.6
+Bloodbite Ring +1,Increase bleed resistance,0.6
+Poisonbite Ring,Increase poison resistance,0.6
+Poisonbite Ring +1,Increase poison resistance,0.6
+Cursebite Ring,Increase curse resistance,0.6
+Fleshbite Ring,Increase all resistances,0.9
+Fleshbite Ring +1,Increase all resistances,0.9
+Knight's Ring,Increase strength by +5,0.8
+Hunter's Ring,Increase dexterity by +5,0.8
+Scholar's Ring,Increase intelligence by +5,0.6
+Priestess Ring,Increase faith by +5,0.6
+Covetous Gold Serpent Ring,Increase item discovery,1.2
+Covetous Gold Serpent Ring +1,Increase item discovery,1.2
+Covetous Gold Serpent Ring +2,Increase item discovery,1.2
+Covetous Silver Serpent Ring,Increase souls gained,1.2
+Covetous Silver Serpent Ring +1,Increase souls gained,1.2
+Covetous Silver Serpent Ring +2,Increase souls gained,1.2
+Saint's Ring,Increase attunement slots by +1,0.5
+Deep Ring,Increase attunement slots by +1,0.5
+Darkmoon Ring,Increase attunement slots by +2,0.8
+Young Dragon Ring,Increase spell strength,0.7
+Bellowing Dragoncrest Ring,Increase spell strength,1
+Great Swamp Ring,Increase pyromancy strength,0.7
+Witch's Ring,Increase pyromancy strength,1
+Morne's Ring,Increase miracle strength,0.7
+Ring of the Sun's Firstborn,Increase miracle strength,1
+Lingering Dragoncrest Ring,Increase duration of effects,0.5
+Lingering Dragoncrest Ring +1,Increase duration of effects,0.5
+Lingering Dragoncrest Ring +2,Increase duration of effects,0.5
+Sage Ring,Reduce spell cast time,0.7
+Sage Ring +1,Reduce spell cast time,0.7
+Sage Ring +2,Reduce spell cast time,0.7
+Dusk Crown Ring,Reduces spell cost and HP,0.6
+Leo Ring,Increases counter damage of thrusts,0.5
+Wolf Ring,Increase poise,0.5
+Wolf Ring +1,Increase poise,0.5
+Wolf Ring +2,Increase poise,0.5
+Hawk Ring,Increase effective range of arrows,0.7
+Hornet Ring,Increase critical attack damage,1.1
+Knight's Slayer's Ring,Increase stability damage to shields,0.9
+Ring of the Evil Eye,Heal from kills,1
+Ring of the Evil Eye +1,Heal from kills,1
+Ring of the Evil Eye +2,Heal from kills,1
+Farron Ring,Reduce cost of weapon skills,0.8
+Dragonscale Ring,Reduce backstab damage,1.1
+Horsehoof Ring,Increase kick stability damage to shields,0.6
+Wood Grain Ring,Increase weapon durability,0.5
+Wood Grain Ring +1,Increase weapon durability,0.5
+Wood Grain Ring +2,Increase weapon durability,0.5
+Flynn's Ring,Lower equipload grants damage bonus,0.9
+Magic Clutch Ring,Increase magic damage but lower magic absorbtion,0.8
+Lightning Clutch Ring,Increase lightning damage but lower lightning absorbtion,0.8
+Fire Clutch Ring,Increase fire damage but lower fire absorbtion,0.8
+Dark Clutch Ring,Increase dark damage but lower dark absorbtion,0.8
+Red Tearstone Ring,Increase damage when HP becomes critical,1.4
+Blue Tearstone Ring,Increase defense when HP becomes critical,1.1
+Lloyd's Sword Ring,Increase damage when HP is full,0.9
+Lloyd's Shield Ring,Increase defense when HP is full,0.9
+Carthus Milk Ring,Increase dexterity by +3 and obscure the wearer when rolling,0.8
+Carthus Blood Ring,Boosts rolling iFrames but decrease absorbtion,0.8
+Pontiff's Right Eye,Boosts damage when attacking via a long string of attacks,1.4
+Pontiff's Left Eye,Restores HP when attacking via a long string of attacks,0.9
+Aldrich's Ruby,Restores HP when performing critical attacks,0.8
+Aldrich's Sapphire,Restores FP when performing critical attacks,0.8
+Silvercat Ring,Reduces fall damage to 0 on any fall that is not lethal,0.6
+Slumbering Dragoncrest Ring,Movement and rolling are silent,0.7
+Obscuring Ring,Obscures the wearer from sight after a certain range,0.9
+Untrue Dark Ring,Make the wearer appear human,0.7
+Untrue White Ring,Make the wearer appear as a phantom,0.7
+Reversal Ring,Wearer changes idle animations with the opposite gender,0.5
+Skull Ring,Wearer generates more aggro,0.6
+Calamity Ring,Wearer takes more damage,0.8
+Ring of Sacrifice,"Wearer will not lost souls or embered status with death, ring will break",1

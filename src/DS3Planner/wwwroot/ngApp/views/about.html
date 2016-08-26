@@ -1,0 +1,8 @@
+<h2>About</h2>
+<p><strong>RGB to HSL</strong></p>
+<p>
+    <input type="text" ng-model="Rgb" value="0" ng-model-options="{debounce:200}" ng-change="controller.rgbToHsl(Rgb, rGb, rgB)" />
+    <input type="text" ng-model="rGb" value="0" ng-model-options="{debounce:200}" ng-change="controller.rgbToHsl(Rgb, rGb, rgB)" />
+    <input type="text" ng-model="rgB" value="0" ng-model-options="{debounce:200}" ng-change="controller.rgbToHsl(Rgb, rGb, rgB)" />
+    <label ng-model="controller.output">{{controller.output}}</label>
+</p>

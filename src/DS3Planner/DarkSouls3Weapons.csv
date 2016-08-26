@@ -1,0 +1,190 @@
+Name,Phys,Magic,Fire,Lightning,Dark,Weight
+Battle Axe,250,0,0,0,0,4
+Man Serpent Hatchet,250,0,0,0,0,4
+Brigand Axe,248,0,0,0,0,3
+Winged Knight Twinaxes,244,0,0,0,0,8.5
+Eleonora,284,0,0,0,0,6.5
+Hand Axe,220,0,0,0,0,2.5
+Butcher Knife,190,0,0,0,0,7
+Thrall Axe,208,0,0,0,0,1.5
+Dragonslayer's Axe,180,0,0,180,0,4
+Dragonrider Bow,200,0,0,0,0,6.5
+Composite Bow,146,0,0,0,0,3.5
+Black Bow of Pharis,134,0,0,0,0,3
+Longbow,164,0,0,0,0,4
+Short Bow,154,0,0,0,0,2
+Darkmoon Longbow,66,80,0,0,0,4.5
+Manikin Claws,158,0,0,0,0,2
+Claw,150,0,0,0,0,1.5
+Arbalest,156,0,0,0,0,6
+Heavy Crossbow,144,0,0,0,0,4.5
+Sniper Crossbow,140,0,0,0,0,7.5
+Avelyn,128,0,0,0,0,7.5
+Light Crossbow,128,0,0,0,0,3
+Knight's Crossbow,80,0,0,80,0,4
+Old Wolf Curved Sword,280,0,0,0,0,13
+Exile Greatsword,292,0,0,0,0,17
+Murakumo,270,0,0,0,0,11
+Carthus Curved Greatsword,244,0,0,0,0,10.5
+Carthus Curved Sword,230,0,0,0,0,5.5
+Falchion,234,0,0,0,0,4
+Pontiff Knight Curved Sword,214,0,0,0,0,3.5
+Carthus Shotel,212,0,0,0,0,3
+Storm Curved Sword,200,0,0,0,0,5
+Shotel,208,0,0,0,0,2.5
+Rotten Ghru Curved Sword,206,0,0,0,0,2
+Sellsword Twinblades,198,0,0,0,0,5.5
+Scimitar,180,0,0,0,0,2.5
+Warden Twinblades,186,0,0,0,0,6.5
+Painting Guardian's Curved Sword,176,0,0,0,0,1.5
+Crescent Moon Sword,142,142,0,0,0,2.5
+Dancer's Enchanted Swords,144,144,144,0,0,8.5
+Corvian Greatknife,166,0,0,0,0,2.5
+Tailbone Short Sword,164,0,0,0,0,2
+Bandit's Knife,132,0,0,0,0,1.5
+Mail Breaker,150,0,0,0,0,1.5
+Dagger,110,0,0,0,0,1.5
+Rotten Ghru Dagger,108,0,0,0,0,2
+Scholar's Candlestick,116,0,0,0,0,1.5
+Handmaid's Dagger,144,0,0,0,0,0.5
+Brigand Twindaggers,110,0,0,0,0,2.5
+Harpe,104,0,0,0,0,1.5
+Parrying Dagger,100,0,0,0,0,1
+Caestus,160,0,0,0,0,0.5
+Demon's Fist,170,0,140,0,0,8
+Dark Hand,77,0,0,0,150,0
+Smough's Great Hammer,358,0,0,0,0,24
+Morne's Great Hammer,348,0,0,0,0,24
+Dragon Tooth,342,0,0,0,0,21
+Vordt's Great Hammer,320,0,0,0,0,17
+Great Club,304,0,0,0,0,12
+Old King's Great Hammer,328,0,126,0,0,18.5
+Great Mace,346,0,0,0,0,18
+Spiked Mace,298,0,0,0,0,16
+Large Club,296,0,0,0,0,10
+Pickaxe,280,0,0,0,0,8
+Gargoyle Flame Hammer,244,0,200,0,0,11
+Great Wooden Hammer,206,0,0,0,0,6
+Black Knight Greataxe,376,0,0,0,0,19.5
+Yhorm's Great Machete,338,0,0,0,0,19
+Greataxe,376,0,0,0,0,16
+Dragonslayer Greataxe,370,0,0,136,0,20
+Great Machete,334,0,0,0,0,14
+Demon's Greataxe,286,0,160,0,0,14.5
+Dragonslayer Greatbow,220,0,0,0,0,10
+Onislayer Greatbow,194,0,0,0,0,7.5
+Hollowslayer Greatsword,264,0,0,0,0,8.5
+Claymore,276,0,0,0,0,9
+Bastard Sword,276,0,0,0,0,8
+Black Knight Sword,272,0,0,0,0,10
+Executioner's Greatsword,262,0,0,0,0,9
+Wolf Knight's Greatsword,230,0,0,0,0,11.5
+Storm Ruler,260,0,0,0,0,10
+Flamberge,288,0,0,0,0,8.5
+Wolnir's Holy Sword,250,0,0,0,0,7.5
+Twin Princes' Greatsword,216,0,134,0,0,9.5
+Firelink Greatsword,218,0,146,0,0,9
+Greatsword of Judgement,184,122,0,0,0,9
+Drakeblood Greatsword,166,130,0,130,0,6
+Moonlight Greatsword,144,200,0,0,0,10.5
+Black Knight Glaive,278,0,0,0,0,9
+Gundyr's Halberd,264,0,0,0,0,13
+Red Hilted Halberd,260,0,0,0,0,8
+Winged Knight Halberd,290,0,0,0,0,14
+Halberd,250,0,0,0,0,8
+Lucerne,252,0,0,0,0,7.5
+Glaive,282,0,0,0,0,11
+Crescent Axe,238,0,0,0,0,6
+Immolation Tinder,206,0,132,0,0,10
+Mace,230,0,0,0,0,5
+Warpick,226,0,0,0,0,4.5
+Morning Star,244,0,0,0,0,5
+Reinforced Club,220,0,0,0,0,5
+Drang Hammers,220,0,0,0,0,9
+Club,216,0,0,0,0,2.5
+Blacksmith Hammer,210,0,0,0,0,5
+Heysel Pick,162,122,0,0,0,4.5
+Washing Pole,252,0,0,0,0,8.5
+Black Blade,244,0,0,0,0,6.5
+Chaos Blade,180,0,0,0,0,6
+Onikiri and Ubadachi,208,0,0,0,0,8.5
+Uchigatana,230,0,0,0,0,5.5
+Darkdrift,226,0,0,0,0,3.5
+Bloodlust,184,0,0,0,0,5
+Irithyll Rapier,202,0,0,0,0,3
+Estoc,210,0,0,0,0,3.5
+Ricard's Rapier,194,0,0,0,0,2.5
+Rapier,190,0,0,0,0,2
+Crystal Sage's Rapier,100,150,0,0,0,2.5
+Great Corvian Scythe,194,0,0,0,0,9
+Pontiff Knight Great Scythe,174,0,0,0,0,7.5
+Great Scythe,210,0,0,0,0,7
+Caitha's Chime,130,0,0,0,0,0.5
+Crystal Chime,128,0,0,0,0,0.5
+Yorshka's Chime,123,0,0,0,0,0.5
+Cleric's Sacred Chime,118,0,0,0,0,0.5
+Priest's Chime,117,0,0,0,0,0.5
+Saint-tree Bellvine,117,0,0,0,0,0.5
+Greatlance,258,0,0,0,0,10.5
+Dragonslayer Swordspear,234,0,0,62,0,14.5
+Lothric Knight Long Spear,224,0,0,0,0,8
+Partizan,216,0,0,0,0,6.5
+Arstor's Spear,216,0,0,0,0,6.5
+Dragonslayer Spear,198,0,0,122,0,9.5
+Winged Spear,190,0,0,0,0,6
+Four-Pronged Plow,210,0,0,0,0,8.5
+Pike,210,0,0,0,0,7.5
+Rotten Ghru Spear,208,0,0,0,0,5.5
+Spear,208,0,0,0,0,4.5
+Drang Twinspears,200,0,0,0,0,8
+Tailbone Spear,216,0,0,0,0,4.5
+Yorshka's Spear,172,0,0,0,0,6.5
+Gargoyle Flame Spear,206,0,180,0,0,9.5
+Saint Bident,196,0,0,0,0,8.5
+Golden Ritual Spear,128,134,0,0,0,3
+Soldering Iron,78,0,192,0,0,5
+Izalith Staff,210,0,0,0,0,3
+Archdecon Great Staff,156,0,0,0,0,2.5
+Sage's Crystal Staff,154,0,0,0,0,2.5
+Man-Grub's Staff,158,0,0,0,0,3
+Heretic's Staff,142,0,0,0,0,3
+Court Sorcerer's Staff,135,0,0,0,0,2
+Storyteller's Staff,136,0,0,0,0,2.5
+Sorcerer's Staff,135,0,0,0,0,2
+Mendicant's Staff,135,0,0,0,0,2.5
+Witch Tree Branch,129,0,0,0,0,2
+Sunlight Straight Sword,196,0,0,0,0,3
+Dark Sword,230,0,0,0,0,4.5
+Broadsword,234,0,0,0,0,3
+Longsword,220,0,0,0,0,3
+Lothric Knight Sword,206,0,0,0,0,4
+Barbed Straight Sword,222,0,0,0,0,3
+Morion Blade,228,0,0,0,0,4
+Irithyll Straight Sword,216,0,0,0,0,4
+Shortsword,198,0,0,0,0,2
+Astora Straight Sword,258,0,0,0,0,3
+Gotthard Twinswords,200,0,0,0,0,6.5
+Lothric's Holy Sword,196,0,0,0,0,4
+Anri's Straight Sword,204,0,0,0,0,3
+Broken Straight Sword,140,0,0,0,0,1
+Cleric's Candlestick,115,126,0,0,0,2
+Sunless Talisman,130,0,0,0,0,0.5
+White Hair Talisman,128,0,138,0,0,0.5
+Saint's Talisman,120,0,0,0,0,0.5
+Sunlight Talisman,120,0,0,0,0,0.5
+Canvas Talisman,117,0,0,0,0,0.5
+Talisman,117,0,0,0,0,0.5
+Black Knight Greatsword,322,0,0,0,0,16
+Profaned Greatsword,294,0,0,0,0,13.5
+Greatsword,318,0,0,0,0,20
+Fume Ultra Greatsword,260,0,0,0,0,25.5
+Zweihander,290,0,0,0,0,10
+Cathedral Knight Greatsword,298,0,0,0,0,15
+Astora Greatsword,264,0,0,0,0,8
+Lorian's Greatsword,276,0,144,0,0,14
+Farron Greatsword,228,0,0,0,0,12.5
+Lothric Knight Greatsword,262,0,0,174,0,16.5
+Spotted Whip,204,0,0,0,0,2.5
+Whip,180,0,0,0,0,2
+Notched Whip,190,0,0,0,0,2
+Witch's Locks,134,0,140,0,0,3

@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color:#d5d5d5;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* Carousel */
+.carousel-caption {
+    z-index: 10 !important;
+}
+
+    .carousel-caption p {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+@media (min-width: 768px) {
+    .carousel-caption {
+        z-index: 10 !important;
+    }
+}
+
+/*Unused flex*/
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.f-jc-sb {
+    justify-content: Space-between;
+}
+
+.f-jc-sa {
+    justify-content: Space-around;
+}
+
+.f-jc-c {
+    justify-content: center;
+}
+
+/*Basic Page Styles*/
+body {
+    background-color: #282a2e;
+}
+
+h1 {
+    color:#d5d5d5;
+}
+
+.section {
+    background-color: transparent;
+    color: #d5d5d5;
+    min-height: 836px;
+}
+
+    .section:before {
+        content: "";
+        position: absolute;
+        top: -3px;
+        bottom: -3px;
+        left: -3px;
+        right: -3px;
+        /*background-image: linear-gradient(to bottom, #28343b 0%, #828c95 36%, #b5bdc8 50%,#828c95 84%,#28343b 100%);*/
+        /*background-image: linear-gradient(to bottom, #171616 0%, #505558 36%, #c5c5c5 50%,#505558 84%,#171616 100%);*/
+        background-color: #171616;
+        z-index: -2;
+    }
+
+    .section:after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        bottom: 2px;
+        left: 2px;
+        right: 2px;
+        background-color: #1d1f21;
+        z-index: -1;
+    }
+
+hr {
+    border: 0;
+    box-shadow: 0 -6px 2px 1px #1d1f21;
+}
+
+.col-xs-4 {
+    padding: 2px;
+}
+
+.row {
+    padding: 7px;
+}
+
+row.wPanel {
+    padding-bottom: 0;
+}
+
+input[readonly] {
+    background-color: #969896;
+    border-right: 2px solid #1d1f21;
+}
+
+input, select {
+    background-color: #b4b7b4;
+    color: #373b41;
+    border: 0;
+}
+
+#navbar-main.affix {
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.buildList li {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 3px;
+    margin-top:20px;
+    padding-left:10px;
+    background-color:#363836;
+}
+
+.buildList a {
+    color:#d5d5d5;
+    font-size:18px;
+}
+
+.buildList a:hover {
+    text-decoration:none;
+    color:#fafafa;
+}
